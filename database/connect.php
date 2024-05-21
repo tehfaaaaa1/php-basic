@@ -12,6 +12,10 @@ $sql2 = 'SELECT * FROM `db_guru`.`guru` LIMIT 1000;';
 $query = $connect->query($sql2);
 if ($query->num_rows != 0) {
     while ($row = $query->fetch_assoc()) {
-        echo $row['nama'] . '<br>';
+        echo $row['id'] . '. ' . $row['nama'] . '<br>';
     }
 }
+?>
+<a href="insert.php">Insert</a>
+<a href="update.php">Update</a>
+<a href="delete.php">Delete</a>

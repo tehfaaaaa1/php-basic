@@ -10,7 +10,7 @@ $sql = 'INSERT INTO `db_guru` . `guru` (`nama`, `alamat`, `umur`) VALUES
 ("rizi", "depok", "19");';
 
 if ($connect->query($sql) === TRUE) {
-    echo 'New record created successfully!';
+    echo '<script>alert("Data berhasil ditambah!"); location = "connect.php"</script>';
 } else {
     echo 'Error : ' . $sql . '<br>' . $connect->error;
 }
